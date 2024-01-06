@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 15</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #logo img {
+            width: 200px;
+            height: 70px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            box-shadow: 10px 1px 2px 1px;
+        }
+
+        #navbar::before {
+            content: " ";
+            /* background-color: rgb(43, 38, 38); */
+            position: absolute;
+            height: 18%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin-left: 300px;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1rem;
+        }
+
+        #navbar ul li a {
+            color: black;
+            padding: 10px 17px;
+            border-radius: 20px;
+            text-decoration: none
+        }
+        #box1 {
+            border: 1px solid whitesmoke;
+        }
+
+        #box2 {
+            border: 1px solid whitesmoke;
+        }
+
+        #box3 {
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            color: gray;
+        }
+
+        #credit {
+            width: 200px;
+            height: 30px;
+            border: 1px solid;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-left: 500px;
+            margin-top: 50px;
+            background-color: rosybrown;
+            color: white;
+            cursor: pointer;
+        }
+        #three {
+            display: flex;
+            justify-content: center;
+        }
+        .child {
+            /* height: 50px;     */
+            width: 100px;
+            border: 1px solid wheat;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            /* text-align: center; */
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        #box12 {
+            font-weight: bold;
+            color: red;
+            border-bottom: 2px solid red;
+
+        }
+
+        #search {
+            height: 50px;
+            width: 800px;
+            /* border: 1px solid; */
+            margin: auto;
+        }
+
+        #box111 {
+            height: 50px;
+            width: 800px;
+
+        }
+
+        #box111 select {
+            height: 50px;
+            width: 150px;
+            border: 1px solid wheat;
+
+        }
+
+        #box111 input {
+            width: 500px;
+            height: 50px;
+            border: 1px solid wheat;
+            border-right: none;
+
+            margin-right: 2px;
+        }
+
+        #aa {
+            height: 50px;
+            width: 150px;
+            border: 1px solid wheat;
+            position: relative;
+            left: 649px;
+            bottom: 50px;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        #option {
+            height: 50px;
+            width: 798px;
+            border: 1px solid wheat;
+            display: flex;
+        }
+        .rad {
+            /* margin-top: 15px; */
+            padding: 10px 10px;
+        }
+        .pl {
+            height: 30px;
+            margin-top: 9px;
+            border: 1px solid wheat;
+            width: 150px;
+        }
+        #avar {
+            margin-left: 10px;
+        }
+        #owner{
+            height: 50px;
+            width: 316px;
+            /* border: 1px solid; */
+            margin-top: 60px ;
+            margin-left: 257px;
+        }
+        #post{
+            height: 40px;
+            width: 200px;
+            border: 1px solid;
+            padding: 10px 24px;
+            margin-left: 310px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo"><img src="./nobroker-logo.jpg" alt=""></div>
+        <ul>
+            <li class="item" id="box1"><a href="#"> <i class="fa fa-address-card-o" aria-hidden="true"
+                        style="color:black ;"></i> My Booking </a></li>
+            <li class="item" id="box2"><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"
+                        style="color:black ;"></i>
+                    |Pay Rent</a></li>
+            <li class="item" id="box3"><a href="#" style="color:white;"> Post Your Property</a></li>
+            <li class="item"><a href="#"> Sign up</a></li>
+            <li class="item" id="book"><a href="#"> Login</a></li>
+            <li class="item" id="book"><a href="#"> Menu <i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <h1>World's Largest NoBrokerage Property Site</h1>
+    <div id="credit"><i class="fa fa-creative-commons" aria-hidden="true"
+            style="color:gold ; font-size: larger;"></i>Pay rent with Credit Card</div>
+
+    <div id="three">
+        <div class="child" id="box11">Buy</div>
+        <div class="child" id="box12">Rent</div>
+        <div class="child" id="box13">Commercial</div>
+    </div>
+
+    <div id="search">
+        <div class="child1" id="box111">
+            <select name="" id="">
+                <option value="">Mumbai</option>
+                <option value="">Pune</option>
+                <option value="">Banglore</option>
+                <option value="">jaipur</option>
+                <option value="">Kochi</option>
+            </select>
+            <input type="text" placeholder="Search Up to three localities">
+            <div id="aa"><i class="fa fa-search" aria-hidden="true"></i> Search</div>
+        </div>
+        <div id="option">
+            <div class="rad"> <input type="radio" name="rate1" id=""> <label for="" class="rate"> Full House</label>
+            </div>
+            <div class="rad"> <input type="radio" name="rate1" id=""> <label for="" class="rate">PG/Hostel</label></div>
+            <div class="rad"><input type="radio" name="rate1" id=""> <label for="" class="rate"> Flatmates</label></div>
+
+
+            <select class="pl" name="" id="apar">
+                <option value="">Apartment Type</option>
+                <option value="">Society</option>
+                <option value="">Row House</option>
+            </select>
+
+            <select class="pl" name="" id="avar">
+                <option value="">Availability</option>
+                <option value="">2BHK</option>
+                <option value="">3BHK</option>
+            </select>
+        </div>
+
+
+<div id="owner">--------------Are you a Property Owner?-----------</div>
+<div id="post">Post Your Property ad</div>
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
